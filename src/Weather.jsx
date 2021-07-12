@@ -1,15 +1,17 @@
-import './Weather.css';
+import "./Weather.css";
+import WeatherContent from "./WeatherContent";
 
 function Weather({ weatherInfo }) {
   return (
     <div className="Weather">
       {weatherInfo.map((day) => {
         return (
-          <div key={day.id} className="container">
-            <h3>{day.weekDey}</h3>
-            <img src={day.imgURL} alt={"logo"} />
-            <h3>{day.temp}</h3>
-          </div>
+          <WeatherContent
+            day={day.id}
+            weekDey={day.weekDey}
+            imgURL={day.imgURL}
+            temp={day.temp}
+          />
         );
       })}
     </div>
