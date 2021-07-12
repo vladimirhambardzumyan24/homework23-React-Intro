@@ -1,0 +1,12 @@
+.Weather {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container {
+  width: 120px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 20px;
+}
