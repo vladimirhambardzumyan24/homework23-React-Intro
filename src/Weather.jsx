@@ -7,7 +7,7 @@ function Weather({ weatherInfo }) {
       {weatherInfo.map((day) => {
         return (
           <WeatherContent
-            day={day.id}
+            key={day.id}
             weekDey={day.weekDey}
             imgURL={day.imgURL}
             temp={day.temp}
